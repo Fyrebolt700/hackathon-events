@@ -213,14 +213,14 @@ function App() {
       {!selectedEvent && (
         <div
           style = {{
-            padding: '0.5 px',
+            padding: '0 15px',
             width: '100%',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             maxWidth: '1100px',
             margin: '0 auto',
-            padding: '20px 10px'
+            boxSizing: 'border-box'
           }}
         >
           <div
@@ -263,8 +263,9 @@ function App() {
                 padding: '15px',
                 cursor: 'pointer',
                 borderRadius: '8px',
-                width: '100%',
+                width: 'calc(100% - 20px)',
                 maxWidth: '900px',
+                boxSizing: 'border-box',
                 backgroundColor: '#8cc6ff',
                 margin: '10px',
                 textAlign: 'center',
@@ -338,7 +339,8 @@ function App() {
               padding: '20px',
               marginTop: '20px',
               borderRadius: '8px',
-              width: '100%',
+              boxSizing: 'border-box',
+              width: 'calc(100% - 20px)',
               maxWidth: '900px'
             }}
           >
