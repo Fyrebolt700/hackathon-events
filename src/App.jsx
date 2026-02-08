@@ -36,17 +36,19 @@ function App() {
  return (
     <div
       style={{
-        padding:'20px',
+        //padding:'20px',
         width: '100%',
         minHeight: '100vh',
-        alignSelf: 'stretch',
+        // boxSizing: 'border-box',
+        // alignSelf: 'stretch',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        backgroundColor: '#3d464f'
+        backgroundColor: '#3d464f',
+        overflowX: 'hidden'
       }}
     >
-    {/* Fixed navigation banner */}
+    {/* Navigation banner */}
       <div
         style={{
           backgroundColor: '#cccfcf',
@@ -263,7 +265,8 @@ function App() {
                 padding: '15px',
                 cursor: 'pointer',
                 borderRadius: '8px',
-                width: 'calc(100% - 20px)',
+                width: '100%',
+                //marginBottom: '20px',
                 maxWidth: '900px',
                 boxSizing: 'border-box',
                 backgroundColor: '#8cc6ff',
@@ -340,7 +343,7 @@ function App() {
               marginTop: '20px',
               borderRadius: '8px',
               boxSizing: 'border-box',
-              width: 'calc(100% - 20px)',
+              width: '100%',
               maxWidth: '900px'
             }}
           >
@@ -400,6 +403,7 @@ function App() {
               <div
                 style={{
                   display: 'flex',
+                  flexWrap: 'wrap',
                   gap: '10px',
                   marginTop: '10px'
                 }}
