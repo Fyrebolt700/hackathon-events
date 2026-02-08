@@ -219,7 +219,8 @@ function App() {
             flexDirection: 'column',
             alignItems: 'center',
             maxWidth: '1100px',
-            margin: '0 auto'
+            margin: '0 auto',
+            padding: '20px 10px'
           }}
         >
           <div
@@ -303,6 +304,7 @@ function App() {
         <div
           style={{
             paddingTop: '60px',
+            padding: '60px 10px 20px 10px',
             width: '100%',
             flexDirection: 'column',
             backgroundColor: '#3d464f',
