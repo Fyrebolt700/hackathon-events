@@ -305,6 +305,7 @@ function App() {
 
       {/* Event detail view */}
       {selectedEvent && (
+        
         <div
           style={{
             paddingTop: '60px',
@@ -315,6 +316,11 @@ function App() {
             alignItems: 'center'
           }}
         >
+           <div
+            style={{
+              padding: '2px 2px 2px 2px'
+            }}
+          >  </div>
           <div
             style={{
               width: '100%',
